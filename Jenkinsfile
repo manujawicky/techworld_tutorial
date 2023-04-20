@@ -1,12 +1,11 @@
 pipeline{
-    agent{
-        label "any"
-    }
+    agent any
     stages{
         stage("Build"){
             steps{
                 echo "========executing Build========"
            
+        }
         }
 
         stage("test"){
@@ -22,6 +21,8 @@ pipeline{
            
         }
         }
+
+
         }
+
     }
-}
